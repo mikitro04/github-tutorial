@@ -15,7 +15,7 @@ ovviamente **sostituisci** your-username e your-repository adeguatamente
 
 Se hai pensato che bastasse fare `git push` per caricare le cose su github aspetta un secondo
 Prima di tutto:
-* Vai su [Github](https://github.com/)
+* Vai su [Github](https://github.com/settings/tokens) (link diretto per saltare i passaggi successivi)
 * Premi sul tuo profilo e vai su Settings
 * Scrollando tutto verso il basso nella barra di destra dovresti trovarti una voce `<> Developer settings`
 * Ora vai su `Personal access tokens` e su `Tokens (classic)`

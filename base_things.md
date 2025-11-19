@@ -1,7 +1,30 @@
 
 # Cose base che devi sapere su github
 
-## Clonare una repo
+## INIZIALIZZAZIONE di git
+
+La prima cosa da fare è ovviamente scaricare git, quindi:
+
+```bash
+sudo apt update
+sudo apt install git
+```
+
+Una volta scaricato eseguiamo il login:
+
+
+```bash
+gh auth login
+```
+
+E poi:
+
+```bash
+git config --global user.name your-username
+git config --global user.email your@email.com
+```
+
+## Clonare una repository
 
 Una volta creata la tua repository dal sito di [Github](https://github.com/) accedi al terminale sulla cartella dove vuoi posizionare la cartella (e.g. /home/mikitro04/Desktop) e digita il seguente comando:
 
@@ -9,7 +32,7 @@ Una volta creata la tua repository dal sito di [Github](https://github.com/) acc
 git clone https://github.com/your-username/your-repository
 ```
 
-ovviamente **sostituisci** your-username e your-repository adeguatamente
+ovviamente **sostituisci** your-username e your-repository adeguatamente.
 
 ## PRIMA di caricare le cose su github
 
@@ -36,7 +59,7 @@ Ora una volta che nella cartella clonata da github hai caricato quello che devi 
 git add .
 ```
 
-Così tutti i file che hai aggiunto verranno riconosciuti da Github, poi scrivi:
+Così tutti i file che hai aggiunto verranno riconosciuti dal commit, poi scrivi:
 
 ```bash
 git commit -a -m "Your upgrade"
@@ -80,11 +103,11 @@ Abbastanza semplicemente scrivi
 git pull
 ```
 
-### Rimuovere dei file e fare il commit
+## Rimuovere dei file e fare il commit
 
-Come per `git add file1 file2 ..` esiste anche il comando `git rm file1 file2 ..` che permette di riconoscere dal commit quali file deve scartare per eseguire un upgrade della repository.
+Come per `git add file1 file2 ..` esiste anche il comando `git rm file1 file2 ..` che permette di far riconoscere al commit quali file deve scartare per eseguire un upgrade della repository.
 
-Prima di tutto fai `git rm file` o `git rm -r directory/` per far capire al commit quali file eliminare,
+Prima di tutto fai `git rm file` o `git rm -r directory/`,
 
 Poi lo stesso comando ma senza `git` per eliminarli anche in locale
 
@@ -95,7 +118,6 @@ git commit -a -m "Your upgrade"
 ```
 
 E il push:
-
 
 ```bash
 git push

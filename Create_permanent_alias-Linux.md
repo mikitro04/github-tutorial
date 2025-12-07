@@ -42,7 +42,15 @@ Questo è l'esempio:
 alias routine='sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y'
 ```
 
-4. Infine premi `Ctrl+o`, `Invio` e infine `Ctrl+x`
+4. Per uscire premi `Ctrl+o`, `Invio` e infine `Ctrl+x`
+
+5. Infine sempre da terminale scrivi
+
+   ```bash
+   source ~/.bashrc
+   ```
+
+   Per ricaricare la configurazione e usare liberamente il tuonuovo alias.
 
 ## Un alias più complicato
 
